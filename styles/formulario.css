@@ -171,8 +171,12 @@ article {
 
     #formulario{
         gap: 0.5vh;
-        padding: 8vh 2vw;
+        padding: 2vh 2vw;
         width: 95%;
+
+        *{
+            font-size: 1.9vw
+        }
     }
     
     #presupuesto{
@@ -201,6 +205,35 @@ article {
 
     }
 
+
+    #formulario div{
+    
+        label{
+            font-size: 1.8vw;
+            width: 5vw;
+        }
+    
+        *{
+            margin: 0 0.4vw 0 0;
+        }
+    
+    }
+
+    #formulario input {
+        font-size: 1.8vw;
+        padding: 0 0.5vw 0 0.5vw;
+    }
+
+    #l_descripcion{
+        font-size: 1.8vw !important;
+        margin: 0 0 0 2vw;
+    }
+
+    #descripcion{
+        height: 15vh;
+        font-size: 1.8vw ;
+    }
+
     #image_s{
         grid-column: span 2 ;
         margin: 2vh 0 ;
@@ -215,12 +248,9 @@ article {
     
     #l_file{
         margin: 0 1vw 0 1.6vw;
+        width: 19vw;
     }
-    
-    /* #file_error{
-        padding: 1vw;
-    } */
-    
+
     #enviar{
         grid-column: span 2;
         border: none;
