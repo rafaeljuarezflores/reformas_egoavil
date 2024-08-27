@@ -1,0 +1,91 @@
+#services{
+    display: grid;
+    grid-column: auto;
+    padding: 2vh 4vw 0 3vw;
+    color: white;
+    place-content: center;
+}
+
+#main_txt{
+    font-family: "Albert Sans", sans-serif;
+    font-size: 2.5vw;
+    letter-spacing: 0.2em;
+    font-weight: 300;
+    text-align: center;
+    background-color: #1e2122;
+    padding: 0.8em 0;
+    width: 97%;
+    margin: 4% auto 8% auto;
+}
+
+#n_services{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 9%;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+#n_services div{
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 1%;
+    width: 31%;
+    min-block-size: 70%;
+    display: grid;
+    place-content: center;
+    position: relative;
+    text-align: center;
+}
+
+#n_services div p{
+    z-index: 12;
+    font-size: 1.6vw;
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 500;
+    padding: 1em;
+    cursor: context-menu;
+}
+
+#n_services div::before {
+    background-color: #0000008f;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#n_services div:hover::before{
+    background: #0000002d;
+}
+
+
+#service_1{
+    background: url("https://images.pexels.com/photos/6394515/pexels-photo-6394515.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
+}
+
+#service_2{
+    background: url("https://media.istockphoto.com/id/1318150161/es/foto/un-hombre-usando-una-herramienta-para-arreglar-partes-de-tuberías-durante-el-trabajo.jpg?b=1&s=612x612&w=0&k=20&c=f-UvceEUeSm9t-yQGbQ6GltgHKgEaffIqTKgaTKIuuY=");
+}
+
+#service_3{
+    background: url("https://images.pexels.com/photos/1669754/pexels-photo-1669754.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+
+#service_4{
+    background: url("https://images.pexels.com/photos/314073/pexels-photo-314073.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+
+#service_5{
+    background: url("https://images.pexels.com/photos/6782474/pexels-photo-6782474.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
+}
+
+#service_6{
+    background: url("https://i.pinimg.com/564x/da/4b/f0/da4bf0cb1e7f9a1c36ca546aaaf454bf.jpg");
+}

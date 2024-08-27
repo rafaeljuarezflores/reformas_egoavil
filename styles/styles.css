@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121f2f;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15181a;
+    padding: 1.7vh 4vw;
+}
+
+header img{
+    width: 16vw;
+    height: auto;
+    padding: 0.5vh 1vw;
+}
+
+header nav{
+    margin-right: 4vw;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 1.3vw;
+}
+
+header nav a {
+    box-sizing: border-box;
+    font-size: 1.2vw;
+    text-decoration: none;
+    font-family:"Calibri", sans-serif;
+    letter-spacing: 0.2vw;
+    font-weight: 600;
+    color: white;
+    padding: 1vh 2.4vw;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+header nav a:hover {
+    background-color: white;
+    color: #000000;
+}
+
+
+
+/* Hero ----------------------------------------------------------------------- */
+
+.hero {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FDFAFA;
+    padding: 4vh 4vw 0 3vw;
+}
+
+#info{
+    padding-left: 2vw;
+    padding-right: 8vw;
+}
+
+#info h1 {
+    font-size: 3.5vw;
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 300;
+}
+
+#info p {
+    font-size: 1.5vw;
+    margin: 3vw auto;
+}
+
+.hero img{
+    margin: 0;
+    width: 100%;
+    max-width: 25vw;
+    height: auto;
+    padding-right: 2vw;
+}
+
+
+
+.reseñas{
+    padding: 2vh 2vw;
+    /* background-color: #e2e2e2; */
+    color: white;
+}
+    
+.reseñas h2{
+    margin: 3% ;
+    font-size: 2.5vw;
+    text-decoration: underline;
+}
+
+#content_reseñas {
+    padding: 1.6vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+}
+
+#content_reseñas *{
+    border-right: 2px solid #ffffff; 
+    border-left: 2px solid #ffffff; 
+    display: block;
+    margin: 0 4%;
+    padding: 10% 5%;
+}
+
+#content_reseñas h1 {
+    border-top: 2px solid #ffffff; 
+    text-decoration: underline;
+    font-size: 2vw;
+    text-align: left;
+}
+
+#content_reseñas p {
+    font-size: 1.3vw;
+    padding: 0 5%;
+}
+
+#content_reseñas span{
+    border-bottom: 2px solid #ffffff; 
+    font-size: 2vw;
+    text-align: center;
+}
+
+footer {
+    padding: 5% 0;
+} 
+
+footer *{
+    text-align: center;
+    font-size: 1.4vw;
+    color: #ffffff;
+} 
+
+@media (max-width: 800px) { 
+    
+    header img{width: 24vw;}
+    header nav{margin-right: 1vw;}
+    header nav ul li {margin: 0 0.5vw;}    
+    header nav a {font-size: 1.5vw; padding: 1vh 2vw;}
+    .hero{align-items: inherit; padding: 0 2vw;}
+    #info{padding: 0 6vw 5vh 3vw;}
+    #info h1 {font-size: 4.5vw;}
+    #info p {font-size: 2.3vw;}
+    .hero img{max-width: 32vw; object-fit: cover; padding-right: 2vw;}
+    article h2 {padding: 3% 0 3% 6%;}
+    article p{font-size: 2.5vw; padding: 9%;}
+    main{padding: 1vw;}
+    #n_services div p{font-size: 2.6vw;}
+    #n_services{margin-top: 4%; margin-bottom: 15%;}
+    .reseñas{margin: 0; padding:2vh 1vw;}
+    #content_reseñas {padding: 1vw;}
+    #content_reseñas *{padding: 12%; margin: 0 0.3vw;}
+    .reseñas h2{font-size: 3.5vw;}
+    #content_reseñas h1 {font-size: 2.7vw;}
+    #content_reseñas p {font-size: 2.2vw; padding: 0 7%;}
+    #content_reseñas span{font-size: 2.5vw;}
+    #contacto *{font-size: 2.4vw;} 
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reformas Egoavil</title>
+    <Link rel="icon" href="media/icono.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/formulario.css">
+    <link rel="stylesheet" href="styles/servicios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="media/logo_s1.png">
+        <nav>
+            <ul>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li> <a href="https://api.whatsapp.com/send?phone=34611229226" target="_blank" id="whatsapp">whatsapp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div id="info">
+            <h1>Empieza tu reforma ahora</h1>
+            <p>
+                En Reformas Egoavil, transformamos tus espacios en hogares de ensueño!.<br /><br />Nos enorgullece ofrecer servicios profesionales de 
+                reformas que se adaptan a las necesidades y gustos de nuestros clientes.<br /><br />
+                Con años de experiencia en el sector, nuestro equipo altamente cualificado se compromete a brindar soluciones personalizadas y de alta calidad para cada proyecto de reforma.
+            </p>
+        </div>
+        <img src="https://i.pinimg.com/564x/19/a7/b7/19a7b78c8933bb1ae2f33d66b2165f97.jpg" alt="" style="width:334px;height:auto"/>
+    </section>
+
+    
+    <!-- Main -->
+    <main id="services">
+        <h2 id="main_txt">NUESTROS SERVICIOS</h2>
+        <div id="n_services">
+            <div id="service_1"><p>REFORMAS DE BAÑO</p></div>        
+            <div id="service_2"><p>INSTALACIÓN Y MANTENIMIENTO DE FONTANERIA</p></div>
+            <div id="service_3"><p>ALISADOS Y TRABAJOS DE PINTURA</p></div>           
+            <div id="service_4"><p>INSTALACIÓN DE SUELO</p></div>           
+            <div id="service_5"><p>REFORMAS DE COCINA</p></div>            
+            <div id="service_6"><p>REVESTIMIENTO DE AZULEJOS</p></div>       
+        </div>
+    </main>
+
+    <!-- contact -->
+    <div id="contacto">
+    <article>
+        <div id="presupuesto">
+            <h1>PIDE TU PRESUPUESTO GRATIS AHORA</h1>
+            <p>Teléfono: <b>611229226</b></p>
+            <a href="https://api.whatsapp.com/send?phone=34611229226" target="_blank" id="whatsapp">whatsapp</a> 
+        </div>
+        <form method="POST" id="formulario" action="https://formsubmit.co/reformasegoavil@gmail.com">
+
+            <div>
+                <label for="nombre" id="l_nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" autocomplete="off">
+            </div>
+            
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="Apellido" autocomplete="off">
+            </div>
+
+            <div>
+                <label for="telefono">Teléfono:</label>
+      
+                <input type="tel" id="telefono" name="telefono" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9+]/g, ' ')"  onfocus="addCountryCode()">
+            </div>
+            
+            <div>
+                <label for="correo">Email:</label>
+                <input type="email" id="email" name="email" autocomplete="off">
+            </div>
+    
+            <label for="descripcion" id="l_descripcion" >Descripción del trabajo a realizar:</label>
+            
+            <textarea id="descripcion" name="descripcion" maxlength="1500"></textarea>
+
+            <article id="image_s">
+                <label for="file" id="l_file">seleccionar imágenes</label>
+
+                <input type="file" id="file" name="file" accept="image/*"  multiple style="display: none;">
+
+                <p id="file_error" style="color: #ffffff;">Ningún archivo seleccionado</p>
+
+            </article>
+    
+            <button id="enviar" type="submit" style="display: block;">Enviar</button>
+        </form>
+    </article>
+    </div>
+    
+
+    
+
+
+    <!-- Reseñas -->
+    <section class="reseñas">
+        <h2>Opiniones de nuestros clientes</h2>
+        <div id="content_reseñas">
+            <h1> María Rodríguez</h1>
+            <h1>Pablo García</h1>
+            <h1>Laura Martínez</h1>
+
+            <p>«Contraté a Reformas Egoavil para una reforma integral de mi baño y quedé sorprendido con el resultado.<br/><br/> Atención al detalle, materiales de calidad y un equipo muy competente. ¡Mi baño parece sacado de una revista de decoración!»</p>
+            <p>«Fue un excelente trabajo el que realizaron en la instalación de un plato de ducha en mi cuarto de baño.<br/><br/> Profesionalidad, puntualidad y un resultado impecable. ¡Muy recomendado!.»</p>
+            <p>«Estoy encantada con el trabajo que realizaron en la instalación de suelo de tarima en toda mi vivienda. Profesionalidad, rapidez y un acabado impecable.<br/><br/> ¡Mi casa ha dado un cambio increíble gracias a su trabajo!»</p>
+
+            <span> ★ ★ ★ ★ ★</span>
+            <span> ★ ★ ★ ★ ★</span>
+            <span> ★ ★ ★ ★ ★</span>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <footer>
+        <p><b>C/ Aldeanueva de la vera 6, Madrid (28044)</b></p>
+        <p>Lunes / Viernes, 9am – 7pm <br/><br/> (+34) 611 22 92 26</p>
+    </footer>
+
+</body>
+</html>
+
+<script src="./script.js"></script>
