@@ -89,3 +89,8 @@
 #service_6{
     background: url("https://i.pinimg.com/564x/da/4b/f0/da4bf0cb1e7f9a1c36ca546aaaf454bf.jpg");
 }
+
+@media (max-width: 800px) { 
+    #n_services div p{font-size: 2.6vw;}
+    #n_services{margin-top: 4%; margin-bottom: 15%;}
+}
